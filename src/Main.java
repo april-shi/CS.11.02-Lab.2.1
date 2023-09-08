@@ -3,20 +3,36 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
+        int addingNumbers = add(5,7);
+        int addingFourNum = add(5,7,6,6);
+        String morning = morningGreeting("Toby Fox");
+        String afternoon = afternoonGreeting("Mac Miller");
+        String triplingStuff = triple("oohbaby");
+        double halfingStuff = half(19);
+        int roundingPositive = roundPositiveValueToNearestInteger(8.5);
+        int roundingPositive2 = roundPositiveValueToNearestInteger(8.49);
+        int roundingNegative = roundNegativeValueToNearestInteger(-8.49);
+        int roundingNegative2 = roundNegativeValueToNearestInteger(-8.5);
 
-        System.out.println(add(5,7));
-        System.out.println(add(5,7,6,6));
-        System.out.println(morningGreeting("Toby Fox"));
-        System.out.println(afternoonGreeting("Mac Miller"));
-        System.out.println(triple("oohbaby"));
-        System.out.println(half(19));
-        System.out.println(roundPositiveValueToNearestInteger(8.5));
-        System.out.println(roundPositiveValueToNearestInteger(8.49));
-        System.out.println(roundNegativeValueToNearestInteger(-8.49));
-        System.out.println(roundNegativeValueToNearestInteger(-8.5));
+        System.out.println(addingNumbers);
+        System.out.println(addingFourNum);
+        System.out.println(morning);
+        System.out.println(afternoon);
+        System.out.println(triplingStuff);
+        System.out.println(halfingStuff);
+        System.out.println(roundingPositive);
+        System.out.println(roundingPositive2);
+        System.out.println(roundingNegative);
+        System.out.println(roundingNegative2);
+
+        return;
+
+        // Call your add method in the main method and see that it works as intended. When you call it,
+        // store it into an appropriately named variable and then print out that variable.
     }
 
     // 1. add
+
     public static int add(int a, int b){
 
         return a + b;
