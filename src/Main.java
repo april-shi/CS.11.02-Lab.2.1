@@ -27,8 +27,6 @@ public class Main {
 
         return;
 
-        // Call your add method in the main method and see that it works as intended. When you call it,
-        // store it into an appropriately named variable and then print out that variable.
     }
 
     // 1. add
@@ -41,7 +39,7 @@ public class Main {
     // 2. add
     public static int add(int a, int b, int c, int d){
 
-        return a + b + c + d;
+        return add(add (a,b), add (c,d));
     }
 
     // 3. morningGreeting
